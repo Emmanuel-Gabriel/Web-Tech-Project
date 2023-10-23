@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Input Employees Data </title>
+       <link rel="stylesheet" href="record.css"/>
+</head>
+<body> 
+    <main>
+        <ul>
+            <li><a href="employees_data.php"> Back </a></li>
+        </ul>
+
+    <div class="container">
+       
+    <div class="header flex-center">
+            <h3> Add New Employee </h3>
+           
+        </div>
+
+            
+            <form action="data.php" method="post">
+
+                <div class="p-20">
+        <div class="row">
+            <div class="form-group">
+                <label for=""> Employees ID </label>
+                <input type="text" class="form-control col-6" name="employeesId" placeholder="Employees ID" required/>
+         
+
+                <div class="form-group ">
+                <label for=""> Employee </label>
+                <input type="text" class="form-control col-6" name="employee" placeholder="Employee" required/>
+            </div>
+        </div>
+      
+            <div class="row">
+                <div class="form-group ">
+                <label for=""> Address </label>
+                <input type="address" class="form-control col-6" name="address" placeholder="Address" required/>
+          
+                    <div class="form-group ">
+                    <label for=""> Contact </label>
+                    <input type="contact" class="form-control col-6" name="contact" placeholder="Contact" required/>
+                </div>
+            </div>
+
+                <div class="form-group ">
+                    <label for=""> Salary </label>
+                    <input type="text" class="form-control col-6" name="salary" placeholder="Salary" required/>
+           
+                    <div class="form-group">
+                        <label for=""> Join Date </label>
+                        <input type="date" class="form-control col-6" name="joinDate" placeholder="Join Date" required/>
+                    </div>
+                </div>
+
+                    <div class="form-group ">
+                    <label for=""> End Date </label>
+                    <input type="date" class="form-control col-6" name="endDate" placeholder="End Date" required/>
+              
+                            <div class="form-group ">
+                            <label for=""> Actions </label>
+                            <input type="text" class="form-control col-6" name="actions" placeholder="Actions" required/>
+                        </div>
+                    </div>
+            </div>
+                </div>
+        <div class="footer">
+        <footer>
+              <button type="submit" class="btn-green" name="submit"> Submit </button>
+        </footer>
+    </div>
+
+</form>
+        </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard </title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+<body>
+    
+    
+    <div class="sidebar">
+        <div class="sidebar-bg">
+        <div class="sidebar-brand">
+            <h2><span class="lab la-accusoft">EZ LAUNDRY!</span></h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="Dashboard.html" class="active"><span class="las la-igloo"></span>
+                    <span>Dashboard</span></a>
+                </li>
+
+                <li>
+                    <a href="employees_data.php"><span class="las la-user-circle"></span>
+                    <span>Employees</span></a>
+                </li>
+
+                <li>
+                    <a href="customers.php"><span class="las la-users"></span>
+                    <span>Customers</span></a>
+                </li>
+
+                <li>
+                    <a href="transactions.php"><span class="las la-receipt"></span>
+                    <span>Transaction</span></a>
+                </li>
+
+                <li>
+                    <a href="add_new_expenditure.php"><span class="las la-list"></span>
+                    <span>Expenditure</span></a>
+                </li>
+
+                <li>
+                    <a href="reports.php"><span class="las la-clipboard-list"></span>
+                    <span>Report</span></a>
+                </li>
+
+                <li>
+                    <a onclick="showModal()"><span class="las la-exit"></span>
+                    <span>Logout</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+              <div class="main-content">
+                <header>
+                    <h1>
+                        <label for="">
+                            <span class="las la-bars"></span>
+                            Dashboard
+                        </label>
+                    </h1>
+
+                    <div id="modal"> 
+
+
+                        <h1> Are you sure you want to Logout? </h1>
+
+                        <a href="Login.html"> <button class="modal-btn1"> Logout </button> </a>
+                        <button class="modal-btn2" onclick="goback()"> Go back </button>
+
+
+                    </div>
+                </header>
+
+
+                <main>
+                    
+                    <div class="cards">
+                       <a href="employees_data.php"> <button class="btn">
+                        <div class="card-single">
+                            <div>
+                                <h1>7</h1>
+                                <span>REGISTERED EMPLOYEES</span>
+                            </div>
+                            <div>
+                            <span class="la la-user-circle"></span>
+                            </div></div>
+                        </button>
+                        </a>
+
+                        <a href="customers.php"> <button class="btn">
+                        <div class="card-single">
+                        <div>
+                        <h1>10</h1>
+                        <span>CUSTOMERS</span>
+                       </div>
+                        <div>
+                        <span class="la la-users"></span>
+                        </div></div>
+                        </button>
+                    </a>
+                        
+                      <a href="transactions.php"> <button class="btn">
+                     <div class="card-single">
+                    <div>
+                        <h1>31</h1>
+                        <span>TOTAL TRANSACTION</span>
+                    </div>
+                    <div>
+                    <span class="la la-receipt"></span>
+                    </div></div>
+                 </button>
+                </a>
+
+
+                <a href="add_new_expenditure.php"> <button class="btn">
+            <div class="card-single">
+            <div>
+                <h1>#20M</h1>
+                <span>EXPENDITURE</span>
+            </div>
+            <div>
+            <span class="la la-list"></span>
+            </div></div>
+            </button>
+        </a>
+
+           <a href="reports.php"> <button class="btn">
+        <div class="card-single">
+        <div>
+            <h1>#250K</h1>
+            <span>PROFIT(THIS YEAR)</span>
+        </div>
+        <div>
+        <span class="la la-google-wallet"></span>
+        </div></div>
+     </button>
+    </a>
+
+                    </div>
+                
+                </main>
+            </div>
+              <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
